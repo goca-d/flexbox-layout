@@ -93,37 +93,45 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+   font-family: 'Amatic SC', cursive;
+   font-family: 'Source Code Pro', monospace;
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-image: url("../img/tomas-robertson-unsplash.jpg");
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
-  color: #fff;
+  color: black;
 }
 
 header,
-footer {
-  background-color: #222;
+.footer {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  background-color: #E0FFFF;
+  opacity: 0.4;
   height: 80px;
   width: 100%;
+  max-width: 1200px;
 }
 
 main {
-  background-color: #ccc;
+
   height: 250px;
   width: 100%;
+  margin-bottom: -80px;
 }
 
 header,
-footer,
+.footer,
 main {
   display: flex;
   justify-content: center;
@@ -135,17 +143,24 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 
 .flex-items {
-  color: #fff;
+  color: black;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
+  background-color: #98B4D4;
+  opacity: 0.6;
   width: 30%;
   height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
 }
 
 /* ==========================================================================
